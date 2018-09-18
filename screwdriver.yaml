@@ -6,6 +6,7 @@ shared:
 # Job definition block, "main" is a default job that all pipelines have
 jobs:
   main:
+    requires: [ ~pr, ~commit ]
     steps:
       - export: export GREETING="Hello, there, Russ!"
       - hello: echo $GREETING
