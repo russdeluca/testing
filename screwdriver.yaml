@@ -1,7 +1,7 @@
 # Shared definition block
 shared:
   # Source: https://hub.docker.com/r/library/buildpack-deps/
-  image: buildpack-deps
+  image: node:6
   
 # Job definition block, "main" is a default job that all pipelines have
 jobs:
